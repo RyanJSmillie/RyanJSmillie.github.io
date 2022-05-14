@@ -20,14 +20,33 @@
     background-color: var(--bg-color);
 }
 
-#logo{
-    height: auto;
-    padding-top: 30px;
+header {
     grid-row: 1/2;
-    grid-column: 2/3;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    background-color: var(--bg-color);
+}
+
+#gap {
+    width: 20vh;
+}
+
+#logo{
+    height: auto;
+    /* padding-top: 30px; */
+    color: var(--primary-color);
+    font-size: 2vh;
+    text-decoration: line-through;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    font-family: 'Lato', sans-serif;
 }
 
 #nav{
@@ -38,7 +57,7 @@
     grid-column: 1/2;
     position: -webkit-sticky;
     position: sticky;
-    top: 300px; 
+    top: 40%; 
 }
 
 #body{
