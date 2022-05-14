@@ -1,6 +1,6 @@
 :root {
     --primary-color: #388c92;
-    --secondary-color: #536390;
+    --secondary-color: #388c92c1;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
@@ -12,13 +12,19 @@
 
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: .5fr 6fr 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 1em;
-    font-size: 10px;
     color: var(--font-color);
     background-color: var(--bg-color);
 }
+
+.anchor{
+    display: block;
+    height: 300px; /*same height as header*/
+    margin-top: -300px; /*same height as header*/
+    visibility: hidden;
+  }
 
 header {
     grid-row: 1/2;
@@ -30,6 +36,11 @@ header {
     position: sticky;
     top: 0px;
     background-color: var(--bg-color);
+    font-size: 2vh;
+    font-weight:bold;
+    text-align: left;
+    align-items: center;
+    height: 60px;
 }
 
 #gap {
@@ -38,26 +49,31 @@ header {
 
 #logo{
     height: auto;
-    /* padding-top: 30px; */
     color: var(--primary-color);
-    font-size: 2vh;
+    font-size: 4vh;
     text-decoration: line-through;
     font-weight: bold;
     letter-spacing: 2px;
-    /* text-align: center; */
-    /* vertical-align: middle; */
     font-family: 'Lato', sans-serif;
+}
+
+#link {
+    font-size: 2.5vh;
 }
 
 #nav{
     color: var(--primary-color);
     text-align: end;
-    height: 50px;
     grid-row: 1/2;
     grid-column: 1/2;
     position: -webkit-sticky;
     position: sticky;
     top: 40%; 
+    padding-right: 3em;
+}
+
+#socials {
+    margin-top: 20px;
 }
 
 #body{
@@ -68,43 +84,47 @@ header {
     border-color: #c1c1c1;
 }
 
-#contact{
-    grid-row: 3/4;
-    grid-column: 2/3;
-    text-align: center;
-    vertical-align: bottom;
+.splash {
+    margin-top: 100px;
+    margin-bottom: 500px;
 }
 
-#copyright{
-    grid-row: 4/5;
-    grid-column: 2/3;
-    text-align: center
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 250px;
+}
+
+#about-me {
+    max-width: 40%;
 }
 
 .profile-pic{
     display: block;
     height: auto;
-    max-height: 50vh;
-    width: 100%;
-    max-width: 70vh;
+    max-height: 35vh;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 100%;
 }
 
 .pictures{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 15%;
+    margin-bottom: 220px;
 }
 
 .image{
     width: 100%;
     height: auto;
-    max-height: 70vh;
+    max-height: 60vh;
 }
 
 #caption{
-    font-size: 1.25vh;
+    font-size: 2vh;
     text-align: center;
 }
 
@@ -117,6 +137,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 260px;
+    margin-left: 20%;
 }
 
 .projectnode {
@@ -141,34 +163,71 @@ header {
     border: 1px solid;
 }
 
+.experience {
+    margin-bottom: 270px;
+}
+
+#contact{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#copyright{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center
+}
+
+
+
+
+
+
+
 h1 {
     color: var(--primary-color);
-    font-size: 7vh;
-    text-decoration: line-through;
-    letter-spacing: 5px;
-    text-align: center;
+    font-size: 10vh;
+    text-align: left;
     vertical-align: middle;
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    margin-left: 20%;
 }
 
 h2 {
-    font-size: 2vh;
+    color: var(--secondary-color);
+    font-size: 5vh;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
     font-weight:bold;
-    text-align: center;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20%;
+    margin-bottom: 15px;
 }
 
 h3 {
-    font-size: 1.75vh;
-    text-align: center;
+    font-size: 2.5vh;
+    font-weight:bold;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20%;
 }
 
 p {
     font-size: 1.75vh;
-    text-align: center;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20%;
 }
 
 a {
     color: var(--font-color);
+    font-size: 2.5vh;
 }
 
 a:link {

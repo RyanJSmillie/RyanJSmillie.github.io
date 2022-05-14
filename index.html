@@ -13,30 +13,43 @@
 <body class="wrapper">
 
     <header>
-        <h2 id="logo">Ryan Smillie</h2>   
+        <a href="#section1" id="logo">Ryan Smillie</a>   
         <div id="gap"></div>    
-        <h2><a href="#about-me" id="link">About me</a></h2>
-        <h2><a href="#projects" id="link">Projects</a></h2>
-        <h2><a href="#experience" id="link">Experience</a></h2>
-        <h2><a href="#contact" id="link">Contact</a></h2>
-        </header>
+        <a href="#section2" id="link">About me</a>
+        <a href="#section3" id="link">Projects</a>
+        <a href="#section4" id="link">Experience</a>
+        <a href="#contact" id="link">Contact</a>
+    </header>
 
     <nav id="nav">
-    <h2><a href="https://twitter.com/RyanJCodes" target="_blank">Twitter</a></h2>
-    <h2><a href="https://www.linkedin.com/in/ryanjsmillie/" target="_blank">LinkedIn</a></h2>
-    <h2><a href="https://github.com/RyanJSmillie" target="_blank">Github</a></h2>
-    <h2><a href="./documents/RyanJSmillieCV2022.pdf" target="_blank">CV</a></h2>
+    <h3 id="socials"><a href="https://twitter.com/RyanJCodes" target="_blank">Twitter</a></h3>
+    <h3 id="socials"><a href="https://www.linkedin.com/in/ryanjsmillie/" target="_blank">LinkedIn</a></h3>
+    <h3 id="socials"><a href="https://github.com/RyanJSmillie" target="_blank">Github</a></h3>
+    <h3 id="socials"><a href="./documents/RyanJSmillieCV2022.pdf" target="_blank">CV</a></h3>
     </nav>
 
     <main id="body">
-        <h1>Ryan <br />Smillie</h1>
-        <h2 id="about-me">About Me.</h2>
-        <h3>Hello! My name is Ryan, I'm 28 and I live in Manchester, UK.</h3>
-        <img class="profile-pic" src="./images/Screenshot 2022-02-21 at 19.05.08.png" alt="Profile Picture" />
-        <p>I have recently started a Software Engineering course with <a href="https://www.manchestercodes.com/"><i>Manchester Codes</i>
-        </a> where I have been learning the basics of HTML and CSS that have allowed me to build this webpage! I am looking forward to 
-        honing my Front & Backend skills which I hope to parlez into a junior developer roll later in the year. Please note that this portfolio
-        is very much a work in progress and is currently more of a vehicle for testing the skills I have learned.</p>
+        <span class="anchor" id="section1"></span>
+        <div class="splash">
+        <h3>Hi, my name is</h3>
+        <h1>Ryan Smillie</h1>
+        <h2 id="sub-heading">Engineering for the future.</h2>
+        <h3>I'm a Software Engineering Student from Manchester, UK. <br />
+            Currently enrolled on a bootcamp with <a href="https://www.manchestercodes.com/"><i>Manchester Codes.</i></a> <br />
+            Learning about Frontend, Backend and everything inbetween <br />
+            with ambitions to become a Full-Stack Developer.
+         </h3>
+         </div>
+
+        <span class="anchor" id="section2"></span>
+        <h2 id="about-me-title" >About me.</h2>
+        <div class="about-me">
+        <h3 id="about-me">Until February 2022 I was a Quantity Surveyor, working on high-profile Civil Engineering projects
+            across the North of England. However, I did a small amount of coding during my degree and it was always something I
+            wanted to revisit. I have found a new passion in coding and can't wait to see the challenges it presents.
+            Please note that this portfolio is very much a work in progress and is currently more of a vehicle for testing the skills I have learned.</h3>
+        <img class="profile-pic" src="./images/profile-picture.png" alt="Profile Picture" />
+        </div>
         
         <div class="pictures">
             <figure class="pictures-child">
@@ -59,10 +72,10 @@
             <br />
         </div>
 
-        <br />
+        <span class="anchor" id="section3"></span>
         <h2 id="projects">Projects.</h2>
-        <p>In the first 10 weeks with Manchester Codes I have worked on a number 
-            of projects which are demonstrated below:</p>
+        <h3>In the first 10 weeks with Manchester Codes I have worked on a number 
+            of projects which are demonstrated below:</h3>
         <div class="projects">
             <figure class="projects-child">
             <img id="virtualPet" class="projectnode" src="./images/virtual-pet.png"></img>
@@ -79,10 +92,18 @@
             <figcaption id="caption">ORU Architects</figcaption>
             </figure>
         </div>
-        <br />
+        
+        <span class="anchor" id="section4"></span>
+        <div class="experience">
         <h2 id="experience">Experience.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta harum dignissimos odit accusantium inventore corrupti doloremque voluptas! Blanditiis fugit eveniet nobis ipsam, cumque necessitatibus id delectus quia dolores eaque obcaecati, quo nostrum! Quibusdam placeat eum modi. Molestias eaque ullam culpa deserunt fugiat architecto libero enim, nostrum esse eveniet laboriosam asperiores aspernatur quibusdam aliquid commodi perferendis maiores autem itaque quisquam impedit. Sequi error ipsam quia totam provident. Nulla reprehenderit cum culpa.</p>
-        <br />
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta harum dignissimos odit 
+            accusantium inventore corrupti doloremque voluptas! Blanditiis fugit eveniet nobis ipsam, 
+            cumque necessitatibus id delectus quia dolores eaque obcaecati, quo nostrum! 
+            Quibusdam placeat eum modi. Molestias eaque ullam culpa deserunt fugiat architecto libero enim, 
+            nostrum esse eveniet laboriosam asperiores aspernatur quibusdam aliquid commodi 
+            perferendis maiores autem itaque quisquam impedit. Sequi error ipsam quia totam provident. 
+            Nulla reprehenderit cum culpa.</h3>
+        </div>
      </main>
 
     <footer id="contact">
