@@ -276,10 +276,6 @@ a:hover {
     color: var(--primary-color);
 }
 
-img {
-    /* border-radius: 15px; */
-}
-
 /* @media screen and (max-width: 600px) {
     .image{
         height: 10%;
