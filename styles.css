@@ -4,6 +4,12 @@
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
+    transition: all .5s ease-in;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 *{
@@ -21,8 +27,8 @@
 
 .anchor{
     display: block;
-    height: 300px; /*same height as header*/
-    margin-top: -300px; /*same height as header*/
+    height: 300px;
+    margin-top: -300px; 
     visibility: hidden;
   }
 
@@ -59,6 +65,12 @@ header {
 
 #link {
     font-size: 2.5vh;
+    transition: all .2s ease-in;
+    border-bottom: solid white;
+}
+
+#link:hover {
+    border-bottom: solid #388c92;
 }
 
 #nav{
@@ -73,7 +85,17 @@ header {
 }
 
 #socials {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-left: 60%;
+    max-width: 4vh;
+    padding-bottom: 7px;
+    border-bottom: solid white;
+    transition: all .3s ease-in;
+}
+
+#socials:hover {
+    border-bottom: solid #388c92;
+    
 }
 
 #body{
@@ -85,14 +107,14 @@ header {
 }
 
 .splash {
-    margin-top: 100px;
-    margin-bottom: 500px;
+    margin-top: 3vh;
+    min-height: 100vh;
 }
 
 .about-me {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 250px;
+    min-height: 100vh;
 }
 
 #about-me {
@@ -121,6 +143,7 @@ header {
     width: 100%;
     height: auto;
     max-height: 60vh;
+    border-radius: 15px;
 }
 
 #caption{
@@ -137,8 +160,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 260px;
     margin-left: 20%;
+    min-height: 100vh;
 }
 
 .projectnode {
@@ -164,7 +187,7 @@ header {
 }
 
 .experience {
-    margin-bottom: 270px;
+    min-height: 100vh;
 }
 
 #contact{
@@ -172,12 +195,18 @@ header {
     grid-column: 2/3;
     text-align: center;
     vertical-align: bottom;
+    min-height: 55vh;
+}
+
+#mail-button {
+    margin-top: 50px;
 }
 
 #copyright{
     grid-row: 4/5;
     grid-column: 2/3;
-    text-align: center
+    text-align: center;
+    margin-left: 10px;
 }
 
 
@@ -248,7 +277,7 @@ a:hover {
 }
 
 img {
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 /* @media screen and (max-width: 600px) {
